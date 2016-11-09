@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel-container col-lg-offset-3 col-lg-6">
+            <p id="NetMonitor">
+                NET M<span class="glyphicon glyphicon-globe"></span>NITOR
+            </p>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Se connecter</h3>
+                </div>
+                <div class="panel-body">
+                	<div id="error" class="alert alert-danger" style="display:none;"></div>
+                    <form>
+                        <fieldset class="form-group">
+                            <label for="pseudo">Nom d'utilisateur</label>
+                            <input name="UserPseudo" id="pseudo" type="text" class="form-control" placeholder="Nom d'utilisateur"/>
+                            <label for="mdp">Mot de passe</label>
+                            <input name="UserPassword"id="mdp" type="password" class="form-control" placeholder="Mot de passe"/>
+                        </fieldset>
+                    </form>
+                    <button class="btn btn-success btn-block" id="Connexion">Se connecter</button>
+                    <div class="col-lg-5">
+                        <hr />
+                    </div>
+                    <h4 class="col-lg-2"> ou </h4>
+                    <div class="col-lg-5">
+                        <hr />
+                    </div>
+                    <button class="btn btn-default btn-block" id="CreateAccount">Creer un compte</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="navbar-fixed-bottom text-center">
+            <p>
+                &copy; 2016 - Net Monitor
+            </p>
+        </div>
+    </footer>
+    
+	<script src="js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/init.js"></script>	
+</body>
+
+</html>
