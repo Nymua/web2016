@@ -1,6 +1,6 @@
 $(function(){
 	
-	if ($('#Connexion').click(function(){
+	if ($('#Connexion').on("click",function(){
 		$('#error').val('').text('');
 		
 		$login = $(':input[name=UserPseudo]').val(); 
@@ -33,4 +33,7 @@ $(function(){
 		}
 		$('#error').append(ul).show();
 	}));
+	$("#CreateAccount").on("click",function(){
+		document.location.href="CreateAccount.html";
+	})
 });
